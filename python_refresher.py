@@ -32,14 +32,17 @@ print("fib2: ")
 for i in range(15):
     print(fib2(i), end=",")
 print("\n")
-# limit = 40
-# fib1_times = compute_time(fib1,limit)
-# fib2_times = compute_time(fib2,limit)
-# print(fib1_times)
-# print(fib2_times)
-# plt.figure()
-# plt.xlabel("fib(n)")
-# plt.ylabel("time (ms)")
-# plt.plot(fib1_times)
-# plt.plot(fib2_times)
-# plt.show()
+# This line is for matplot lib to make a 
+# graph to see the timeline of the deferent functions
+# and able to make a difference between them
+limit = 40
+fib1_times = compute_time(fib1,limit)
+fib2_times = compute_time(fib2,limit)
+print(fib1_times)
+print(fib2_times)
+plt.figure()
+plt.xlabel("fib(n)")
+plt.ylabel("time (ms)")
+plt.plot(fib1_times)
+plt.plot(fib2_times)
+plt.show()
